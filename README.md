@@ -1,6 +1,7 @@
 ## Carrinho com Braço Articulado Utilizando Arduino
 
-* O Controle do Carrinho e do Braço Robotico é Realizado Através do "JoyStick"(Controller) do Aplicativo "Arduino Bluetooth Controller", baixado na PlayStore: https://play.google.com/store/apps/details?id=com.appsvalley.bluetooth.arduinocontroller
+* O projeto é um carrinho com braço articulado onde utilizei o Arduino.
+É possível controlar os movimentos de carrinho e do braço robotico via bluetooth. Para isso, fiz uso do aplicativo (que simula um JoyStick) chamado "Arduino Bluetooth Controller" (https://play.google.com/store/apps/details?id=com.appsvalley.bluetooth.arduinocontroller)
 
 
 ### Foto do Projeto:
