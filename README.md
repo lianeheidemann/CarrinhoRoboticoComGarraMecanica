@@ -1,11 +1,106 @@
-## Carrinho com Braço Articulado Utilizando Arduino
+# 🤖 Carrinho Robótico com Garra Controlado via Bluetooth
 
-* O projeto é um carrinho com braço articulado onde utilizei o Arduino.
-É possível controlar os movimentos de carrinho e do braço robotico via bluetooth. Para isso, fiz uso do aplicativo (que simula um JoyStick) chamado "Arduino Bluetooth Controller" (https://play.google.com/store/apps/details?id=com.appsvalley.bluetooth.arduinocontroller)
+Projeto desenvolvido utilizando Arduino para controlar um carrinho robótico com garra mecânica via Bluetooth.
+
+O sistema permite movimentar o carrinho em diferentes direções e controlar a garra utilizando um aplicativo que simula um joystick no celular.
+
+---
+
+# 📸 Demonstração
+
+<p align="center">
+  <img width="300" src="https://github.com/user-attachments/assets/e42fd008-3350-4d0e-98ff-e62812c17474" />
+</p>
+
+<p align="center">
+  <img width="400" src="https://github.com/user-attachments/assets/e139d0a5-4c8f-4ca3-b029-00c2687fdce9" />
+</p>
+
+---
+
+# 🚀 Funcionalidades
+
+- Movimento para frente
+- Movimento para trás
+- Virar para esquerda
+- Virar para direita
+- Parar o carrinho
+- Abrir garra robótica
+- Fechar garra robótica
+- Controle remoto via Bluetooth
+
+---
+
+# 🛠 Tecnologias Utilizadas
+
+- Arduino C/C++
+- Arduino IDE
+- Biblioteca Servo.h
+- Bluetooth HC-05 / HC-06
+
+---
+
+# 🔌 Componentes Utilizados
+
+- Arduino Uno/Mega
+- Kit braço robótico em acrílico
+- Ponte H L298N ou L293D
+- 2 Servo Motors
+- Módulo Bluetooth HC-05
+- Motores DC
+- Chassi robótico
+- Fonte/Bateria
+
+---
+
+# 🎮 Controles Bluetooth
+
+| Comando | Função |
+|---|---|
+| G | Frente |
+| F | Ré |
+| R | Esquerda |
+| L | Direita |
+| S | Parar |
+| 8 | Fechar garra |
+| 7 | Abrir garra |
+
+---
+
+# 📂 Estrutura do Projeto
+
+```bash
+📁 projeto
+ ┣ 📄 codigo_arduino.ino
+ ┣ 📄 README.md
+ ┗ 📁 imagens
+```
+
+---
+
+# ⚙️ Como Executar
+
+1. Instale a Arduino IDE
+2. Conecte o Arduino ao computador
+3. Faça upload do código
+4. Conecte o módulo Bluetooth ao celular
+5. Utilize um aplicativo Bluetooth Joystick
+6. Controle o carrinho remotamente
+
+---
+
+# 🔧 Ligações Básicas
+
+| Componente | Pino Arduino |
+|---|---|
+| Servo Garra | 9 |
+| Servo Braço | 8 |
+| Motor 1 | 4 e 5 |
+| Motor 2 | 6 e 7 |
+| Bluetooth RX/TX | Serial |
 
 
-### Foto do Projeto:
 
+# 👨‍💻 Autor
 
-![image](https://github.com/liane-heidemann/GarraRobotica_Arduino/assets/54177181/e32f7304-a685-4532-86fa-34245f2e05ef)
-![Screenshot_20230617_184132_Gallery](https://github.com/lianeheidemann/BracoRoboticoComCarrinho/assets/54177181/b17db8ea-5efb-404f-b2a6-2b7dc0ad1f34)
+Desenvolvido por Liane.
