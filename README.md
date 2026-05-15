@@ -61,17 +61,6 @@ O sistema permite movimentar o carrinho em diferentes direções e controlar a g
 
 ---
 
-# 📂 Estrutura do Projeto
-
-```bash
-📁 projeto
- ┣ 📄 codigo_arduino.ino
- ┣ 📄 README.md
- ┗ 📁 imagens
-```
-
----
-
 # ⚙️ Como Executar
 
 1. Instale a Arduino IDE
