@@ -83,18 +83,6 @@ O sistema permite movimentar o carrinho em diferentes direções e controlar a g
 
 ---
 
-# 🔧 Ligações Básicas
-
-| Componente | Pino Arduino |
-|---|---|
-| Servo Garra | 9 |
-| Servo Braço | 8 |
-| Motor 1 | 4 e 5 |
-| Motor 2 | 6 e 7 |
-| Bluetooth RX/TX | Serial |
-
-
-
 # 👨‍💻 Autor
 
 Desenvolvido por Liane.
