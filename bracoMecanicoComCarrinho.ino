@@ -1,94 +1,125 @@
 #include <Servo.h>
 
-Servo myservo1; //Abre e fecha GARRA
-Servo myservo2; //Sobe e dece BRAÇO
-int servo1 = 100; //Angulo da GARRA
-int servo2 = 80; //Angulo do BRAÇO
+// ================= SERVOS =================
+Servo myservo1; // Garra
+Servo myservo2; // Braço
 
-//PENEUS DO CARRINHO
-int Pin4 = 4; 
-int Pin5 = 5; 
-int Pin6 = 6; 
-int Pin7 = 7; 
+int servo1 = 100;
+int servo2 = 80;
 
-//OPÇÕES VIA BLUETOOTH 
-int val; 
+// ================= MOTORES =================
+int Pin4 = 4;
+int Pin5 = 5;
+int Pin6 = 6;
+int Pin7 = 7;
 
-void setup(){
+// ================= BLUETOOTH =================
+char val;
+
+void setup() {
+
     Serial.begin(9600);
-    pinMode(Pin4,OUTPUT); 
-    pinMode(Pin5,OUTPUT); 
-    pinMode(Pin6,OUTPUT); 
-    pinMode(Pin7,OUTPUT);
-    digitalWrite(Pin4,LOW); 
-    digitalWrite(Pin5,LOW); 
-    digitalWrite(Pin6,LOW); 
-    digitalWrite(Pin7,LOW);
-    myservo2.attach(8); 
-    myservo1.attach(9); 
-    myservo1.write(servo1); 
+
+    pinMode(Pin4, OUTPUT);
+    pinMode(Pin5, OUTPUT);
+    pinMode(Pin6, OUTPUT);
+    pinMode(Pin7, OUTPUT);
+
+    // Motores desligados
+    digitalWrite(Pin4, LOW);
+    digitalWrite(Pin5, LOW);
+    digitalWrite(Pin6, LOW);
+    digitalWrite(Pin7, LOW);
+
+    // Servos
+    myservo1.attach(9);
+    myservo2.attach(8);
+
+    myservo1.write(servo1);
     myservo2.write(servo2);
 }
 
-void loop(){
-    if (Serial.available()>0) {
+void loop() {
 
-        //Lê a OPÇÃO selecionada no APLICATIVO
-        //que simula um JOYSTICK
+    if (Serial.available() > 0) {
+
         val = Serial.read();
-        
-        //Carrinho ir para FRENTE 
+
+        // ================= FRENTE =================
         if (val == 'G') {
-            digitalWrite(Pin4,LOW);
-            digitalWrite(Pin5,HIGH); 
-            digitalWrite(Pin6,LOW); 
-            digitalWrite(Pin7,HIGH);
+
+            digitalWrite(Pin4, LOW);
+            digitalWrite(Pin5, HIGH);
+            digitalWrite(Pin6, LOW);
+            digitalWrite(Pin7, HIGH);
         }
-        //Carrinho ir para TRÁS
+
+        // ================= TRÁS =================
         else if (val == 'F') {
-            digitalWrite(Pin4,HIGH);
-            digitalWrite(Pin5,LOW);
-            digitalWrite(Pin6,HIGH);
-            digitalWrite(Pin7,LOW);
+
+            digitalWrite(Pin4, HIGH);
+            digitalWrite(Pin5, LOW);
+            digitalWrite(Pin6, HIGH);
+            digitalWrite(Pin7, LOW);
         }
-        //Carrinho PARAR
+
+        // ================= PARAR =================
         else if (val == 'S') {
-            digitalWrite(Pin4,LOW); 
-            digitalWrite(Pin5,LOW); 
-            digitalWrite(Pin6,LOW); 
-            digitalWrite(Pin7,LOW);
+
+            digitalWrite(Pin4, LOW);
+            digitalWrite(Pin5, LOW);
+            digitalWrite(Pin6, LOW);
+            digitalWrite(Pin7, LOW);
         }
-        //Carrinho virar para ESQUERDA 
+
+        // ================= ESQUERDA =================
         else if (val == 'R') {
-            digitalWrite(Pin4,HIGH); 
-            digitalWrite(Pin5,LOW); 
-            digitalWrite(Pin6,LOW); 
-            digitalWrite(Pin7,LOW);
+
+            digitalWrite(Pin4, HIGH);
+            digitalWrite(Pin5, LOW);
+            digitalWrite(Pin6, LOW);
+            digitalWrite(Pin7, LOW);
         }
-        //Carrinho virar para DIREITA 
+
+        // ================= DIREITA =================
         else if (val == 'L') {
-            digitalWrite(Pin4,LOW); 
-            digitalWrite(Pin5,LOW); 
-            digitalWrite(Pin6,HIGH); 
-            digitalWrite(Pin7,LOW);
+
+            digitalWrite(Pin4, LOW);
+            digitalWrite(Pin5, LOW);
+            digitalWrite(Pin6, HIGH);
+            digitalWrite(Pin7, LOW);
         }
-        
-        //FECHAR garra
-        if(val=='8') {
-            for (servo1=100; servo1 <= 130; servo1 += 1) {
-                delay(150);
-                myservo1.write(servo1); 
+
+        // ================= FECHAR GARRA =================
+        else if (val == '8') {
+
+            for (servo1 = 100; servo1 <= 130; servo1++) {
+
+                myservo1.write(servo1);
+                delay(20);
             }
-            for (servo2=80; servo2 >= 60; servo2 -= 1) {
-                delay(150);
-                myservo2.write(servo2);    //angulo 60°           
+
+            for (servo2 = 80; servo2 >= 60; servo2--) {
+
+                myservo2.write(servo2);
+                delay(20);
             }
         }
-        //ABRIR garra 
-        else if (val=='7') {
-            delay(150);
-            myservo1.write(100); 
-            myservo2.write(80);
+
+        // ================= ABRIR GARRA =================
+        else if (val == '7') {
+
+            for (servo2 = 60; servo2 <= 80; servo2++) {
+
+                myservo2.write(servo2);
+                delay(20);
+            }
+
+            for (servo1 = 130; servo1 >= 100; servo1--) {
+
+                myservo1.write(servo1);
+                delay(20);
+            }
         }
     }
 }
