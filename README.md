@@ -10,6 +10,9 @@ O sistema permite movimentar o carrinho em diferentes direções e controlar a g
 
 <img width="5108" height="2520" alt="1000312912" src="https://github.com/user-attachments/assets/05794e56-774d-4db0-b68f-a03589c2b1ca" />
 
+<img width="5108" height="2520" alt="1000312912" src="https://github.com/user-attachments/assets/127e4a01-d1b9-4a34-8900-abf4d5315c95" />
+
+
 ---
 
 # 🚀 Funcionalidades
@@ -104,4 +107,5 @@ Desenvolvido por Liane.
   <img width="400" src="https://github.com/user-attachments/assets/e139d0a5-4c8f-4ca3-b029-00c2687fdce9" />
 </p>
 
+<img width="5108" height="2520" alt="1000312912" src="https://github.com/user-attachments/assets/240fbe62-31f2-43f8-b06a-eea244001555" />
 
