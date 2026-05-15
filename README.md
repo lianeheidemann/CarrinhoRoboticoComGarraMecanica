@@ -8,9 +8,7 @@ O sistema permite movimentar o carrinho em diferentes direções e controlar a g
 
 # 📸 Demonstração
 
-<p align="center">
-  <img width="400" src="https://github.com/user-attachments/assets/e139d0a5-4c8f-4ca3-b029-00c2687fdce9" />
-</p>
+<img width="5108" height="2520" alt="1000312912" src="https://github.com/user-attachments/assets/05794e56-774d-4db0-b68f-a03589c2b1ca" />
 
 ---
 
@@ -101,5 +99,9 @@ O sistema permite movimentar o carrinho em diferentes direções e controlar a g
 
 Desenvolvido por Liane.
 
-<img width="5108" height="2520" alt="1000312912" src="https://github.com/user-attachments/assets/05794e56-774d-4db0-b68f-a03589c2b1ca" />
+
+<p align="center">
+  <img width="400" src="https://github.com/user-attachments/assets/e139d0a5-4c8f-4ca3-b029-00c2687fdce9" />
+</p>
+
 
