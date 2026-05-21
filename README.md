@@ -39,7 +39,7 @@ O sistema permite movimentar o carrinho em diferentes direções e controlar a g
 - Arduino Uno/Mega
 - Kit braço robótico em acrílico
 - Ponte H L298N ou L293D
-- 2 Servo Motors
+- Servo Motores
 - Módulo Bluetooth HC-05
 - Motores DC
 - Chassi robótico
