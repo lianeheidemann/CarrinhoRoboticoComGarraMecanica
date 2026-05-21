@@ -72,9 +72,7 @@ O sistema permite movimentar o carrinho em diferentes direções e controlar a g
 
 ---
 
-# 👨‍💻 Autor
-
-Desenvolvido por Liane Heidemann 
+# 👨‍💻 Desenvolvidor: Liane Heidemann 
 
 
 <p align="center">
